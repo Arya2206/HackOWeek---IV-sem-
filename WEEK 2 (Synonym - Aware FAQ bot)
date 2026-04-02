@@ -1,0 +1,43 @@
+🤖 Synonym-Aware FAQ Bot – Basic Idea
+🧠 Introduction
+
+A Synonym-Aware FAQ Bot is a chatbot that answers user questions by understanding the meaning of the query, even if different words are used.
+
+In real life, people ask the same question in many different ways. A normal FAQ system only works when the exact words match, but this bot improves that by recognizing synonyms and similar terms.
+❗ Problem with Traditional FAQ Systems
+Works only on exact keyword matching
+Fails when wording changes
+
+👉 Example:
+
+Stored FAQ: “How to pay fees?”
+User asks: “How can I pay tuition?”
+
+❌ Traditional bot → No answer
+✅ Synonym-aware bot → Correct answer
+
+💡 What we Are Supposed to Build
+
+You will build a system that:
+
+1. Takes a user query
+
+User types a question (e.g., “How do I make payment?”)
+
+2. Understands similar words
+
+It recognizes:
+
+fees = tuition = payment = charges
+3. Maps it to the correct FAQ
+
+All similar queries are linked to one common intent
+
+4. Returns the correct answer
+
+Bot responds with the appropriate stored answer
+
+🎯 Goal of the Project
+Make FAQ systems smarter and more flexible
+Improve user experience
+Reduce manual support effort
