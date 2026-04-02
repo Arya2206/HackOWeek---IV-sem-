@@ -1,0 +1,43 @@
+🔐 Smart Door Automation System (IR + Servo + Logging)
+🧠 1. System Overview
+
+The system detects a person approaching the door using an IR proximity sensor, opens the door using a servo motor, and logs each event (entry/exit).
+
+⚙️ 2. Components Required
+Microcontroller (Arduino Uno / ESP32 / Raspberry Pi Pico)
+IR Proximity Sensor
+Servo Motor (SG90 or MG90S)
+Buzzer (optional, for alert)
+LED (status indicator)
+Resistors + jumper wires
+Power supply (5V)
+(Optional) WiFi module / ESP32 for cloud logging
+🔌 3. Circuit Connections (Arduino Example)
+
+IR Sensor:
+
+VCC → 5V
+GND → GND
+OUT → Digital Pin 2
+
+Servo Motor:
+
+VCC → 5V
+GND → GND
+Signal → Digital Pin 9
+
+LED (optional):
+
+Anode → Pin 13 (via resistor)
+Cathode → GND
+🔄 4. Working Logic (Core Flow)
+IR sensor detects object (LOW or HIGH depending on module)
+If object detected:
+Open door (servo rotates to 90°)
+Turn ON LED
+Log: "Door Opened"
+Wait for a few seconds
+If no object:
+Close door (servo returns to 0°)
+Turn OFF LED
+Log: "Door Closed"
